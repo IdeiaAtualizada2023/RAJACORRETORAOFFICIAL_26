@@ -1,21 +1,16 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
   <meta charset="UTF-8" />
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-2258885174"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'AW-2258885174');
-  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
   <link rel="stylesheet" href="_css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="_imagens/logo color cabeça.png" type="image/x-icon" />
 
   <!-- Meta Tags para SEO -->
@@ -32,64 +27,10 @@
     content="Sua saúde em boas mãos. Planos a partir de R$ 129,41 com carência reduzida" />
   <meta property="og:image" content="_imagens/Logomarca Hapvida Nova.webp" />
 
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="reveal.js" defer></script>
-  <script src="menu.js" defer></script>
-  <script src="web3forms-functions.js" defer></script>
-  <title>Plantão de Vendas Hapvida</title>
-
-  <script>
-    (function (a, b, c, d) {
-      try {
-        var e = b.head || b.getElementsByTagName("head")[0];
-        var f = b.createElement("script");
-        f.setAttribute("src", c);
-        f.setAttribute("charset", "UTF-8");
-        f.defer = true;
-        a.neuroleadId = d;
-        e.appendChild(f);
-      } catch (g) { }
-    })(
-      window,
-      document,
-      "https://cdn.leadster.com.br/neurolead/neurolead.min.js",
-      "ZQZITACd7vRpsMTnptpa8w4oW"
-    );
-  </script>
-
-  <!-- Meta Pixel Code -->
-  <script>
-    !function (f, b, e, v, n, t, s) {
-      if (f.fbq) return; n = f.fbq = function () {
-        n.callMethod ?
-          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-      };
-      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-      n.queue = []; t = b.createElement(e); t.async = !0;
-      t.src = v; s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s)
-    }(window, document, 'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1667036944266847');
-    fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=1667036944266847&ev=PageView&noscript=1" /></noscript>
-  <!-- End Meta Pixel Code -->
-
   <!-- search-console -->
   <meta name="google-site-verification" content="uhui-pMTbiJEmPujFyq1XQsPy7sYHeGmjqlgqJMgWio" />
   <!-- End search-console -->
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-TZQF88VS');</script>
-  <!-- End Google Tag Manager -->
+  <title>Plantão de Vendas Hapvida</title>
 </head>
 
 <body>
@@ -102,7 +43,7 @@
       <div class="logo">
         <div class="logo-item">
           <a href="#home">
-            <img src="_imagens/03.1 logoHapvidaMobile.webp" alt="Logomarca-hapvida" width="100px" />
+            <img src="_imagens/03.1 logoHapvidaMobile.webp" alt="Logomarca-hapvida" width="100px" fetchpriority="high" />
           </a>
         </div>
         <div class="logo-item">
@@ -710,6 +651,66 @@
       </div><!--line-footer baixo-->
     </div><!--interface-->
   </footer>
-</body>
 
-</html>
+  <!-- Scripts movidos para o final para melhorar o LCP -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-2258885174"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'AW-2258885174');
+  </script>
+
+
+  <script src="menu.js" defer></script>
+  <script src="web3forms-functions.js" defer></script>
+
+  <script>
+    (function (a, b, c, d) {
+      try {
+        var e = b.head || b.getElementsByTagName("head")[0];
+        var f = b.createElement("script");
+        f.setAttribute("src", c);
+        f.setAttribute("charset", "UTF-8");
+        f.defer = true;
+        a.neuroleadId = d;
+        e.appendChild(f);
+      } catch (g) { }
+    })(
+      window,
+      document,
+      "https://cdn.leadster.com.br/neurolead/neurolead.min.js",
+      "ZQZITACd7vRpsMTnptpa8w4oW"
+    );
+  </script>
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1667036944266847');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1667036944266847&ev=PageView&noscript=1" /></noscript>
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TZQF88VS');</script>
+
+</body></html>

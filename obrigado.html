@@ -3,34 +3,18 @@
 
 <head>
   <meta charset="UTF-8" />
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-2258885174"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    gtag('config', 'AW-2258885174');
-  </script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
   <link rel="stylesheet" href="_css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="_imagens/logo color cabeça.png" type="image/x-icon" />
   <meta name="description"
     content="Obrigado por entrar em contato com a Raja Planos de Saúde. Em breve retornaremos." />
   <title>Obrigado - Raja Corretora</title>
-
-  <!-- Google Pagina de Obrigado-->
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16686253492"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'AW-16686253492');
-  </script>
-
 </head>
 
 <body>
@@ -39,7 +23,7 @@
       <div class="logo">
         <div class="logo-item">
           <a href="index.html#home">
-            <img src="_imagens/Logomarca Hapvida Nova.webp" alt="Logomarca-hapvida" width="100px" />
+            <img src="_imagens/Logomarca Hapvida Nova.webp" alt="Logomarca-hapvida" width="100px" fetchpriority="high" />
           </a>
         </div>
         <div class="logo-item">
@@ -194,6 +178,21 @@
       </div><!--line-footer baixo-->
     </div><!--interface-->
   </footer>
-</body>
 
-</html>
+  <!-- Scripts movidos para o final para melhorar performance -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-2258885174"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'AW-2258885174');
+  </script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16686253492"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'AW-16686253492');
+  </script>
+</body></html>
