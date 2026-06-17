@@ -6,3 +6,47 @@
     max-width: 100%;
     object-fit: contain;
 }
+
+/* Botão WhatsApp exclusivo para Mobile */
+.btn-whatsapp-mobile-container {
+    display: none;
+}
+
+@media screen and (max-width: 1020px) {
+    .btn-whatsapp-mobile-container {
+        display: block;
+        padding: 0 28px;
+        margin-top: -15px;
+        margin-bottom: 15px;
+    }
+    
+    .btn-whatsapp-mobile {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        max-width: 400px;
+        padding: 15px 20px;
+        font-size: 16px;
+        font-weight: 700;
+        background-color: #00FF08;
+        border: 0;
+        border-radius: 30px;
+        color: #000;
+        cursor: pointer;
+        box-shadow: 0 4px 15px rgba(0, 255, 8, 0.4);
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+    
+    .btn-whatsapp-mobile:hover {
+        box-shadow: 0 6px 20px rgba(0, 255, 8, 0.6);
+        transform: scale(1.03);
+    }
+    
+    .topo-do-site .txt-topo-site p {
+        margin-top: 10px !important;
+    }
+}
